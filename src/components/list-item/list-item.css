@@ -1,0 +1,45 @@
+.list-item{
+    background: white;
+    display: flex;
+    max-height: 10vh;
+}
+
+.list-item + .list-item{
+    padding-top: 2rem;
+}
+
+.list-item > .check-wrapper{
+    position: relative;
+    width: calc(10% - 3rem);
+    display: flex;
+    align-items: center;
+    justify-content:  center;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.list-item > .check-wrapper > img{
+    background-color: black;
+}
+
+.list-item > div + div{
+    min-width: 80%;
+}
+
+.list-item > div + div + div{
+    min-width: 0;
+    width: 10%;
+    justify-content: center;
+    display: flex;
+}
+
+.list-item img{
+    aspect-ratio: 1/1;
+}
+
+.list-item > div+div+div > img{
+    width: 50%;
+    object-fit: scale-down;
+    padding: 4% 0 4% 0;
+}
+
