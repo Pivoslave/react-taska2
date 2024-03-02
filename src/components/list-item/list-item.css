@@ -1,7 +1,6 @@
 .list-item{
     background: white;
     display: flex;
-    max-height: 10vh;
 }
 
 .list-item + .list-item{
@@ -14,31 +13,43 @@
     display: flex;
     align-items: center;
     justify-content:  center;
-    padding-left: 2rem;
     padding-right: 1rem;
 }
 
 .list-item > .check-wrapper > img{
     background-color: black;
+    align-self: center;
+    height: 5vh;
 }
 
 .list-item > div + div{
     min-width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.list-item > div + div > h3{
+    margin: 0;
+    font-family: "Oswald Regular", sans-serif;
+    font-size: 1vw;
 }
 
 .list-item > div + div + div{
     min-width: 0;
     width: 10%;
-    justify-content: center;
+    justify-content: flex-end;
     display: flex;
+    align-items: flex-end;
 }
 
 .list-item img{
     aspect-ratio: 1/1;
+    height: 5vh;
+    cursor: pointer;
 }
 
 .list-item > div+div+div > img{
-    width: 50%;
     object-fit: scale-down;
     padding: 4% 0 4% 0;
 }

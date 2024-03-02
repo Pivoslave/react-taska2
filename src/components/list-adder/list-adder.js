@@ -7,14 +7,16 @@ function ListAdder(props){
 
     return(
         <>
-        <div className='list-adder'>
+        <div className='list-adder' style={{fontFamily:'Oswald Regular'}}>
             <h1>Todo list:</h1>
-            <button onClick={() => setShowAdd(!showAdd)}>+</button>
+            <button onClick={() => setShowAdd(!showAdd)} style={{cursor:'pointer'}}>+</button>
         </div>
 
 
-        <AddDialogue showAdder={showAdd}/>
+        <AddDialogue showAdder={setShowAdd} showState={showAdd} addItemHandler={props.addItem}/>
         </>
-    )}
+    )
+
+}
 
 export default ListAdder;
